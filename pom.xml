@@ -86,19 +86,7 @@
             </executions>
         </plugin>
 
-        <!-- Maven Jar Plugin para agregar el Main-Class en el MANIFEST.MF -->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>3.3.0</version>
-            <configuration>
-                <archive>
-                    <manifest>
-                        <mainClass>com.registro.doctores.DoctoresApplication</mainClass>
-                    </manifest>
-                </archive>
-            </configuration>
-        </plugin>
+        
     </plugins>
 </build>
 
