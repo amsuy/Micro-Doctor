@@ -56,13 +56,13 @@
         </dependency>
     </dependencies>
 
-   <build>
+<build>
     <plugins>
         <!-- Compiler Plugin -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.11.0</version>
+            <version>3.10.1</version>
             <configuration>
                 <source>${java.version}</source>
                 <target>${java.version}</target>
@@ -80,15 +80,14 @@
             <executions>
                 <execution>
                     <goals>
-                        <goal>repackage</goal>
+                        <goal>repackage</goal> <!-- 👉 crea el fat JAR -->
                     </goals>
                 </execution>
             </executions>
         </plugin>
-
-        
     </plugins>
 </build>
+
 
 
 </project>
